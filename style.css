@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --secondtext: #525560;
+  --firsttext: #0b0706;
+  --headingcolor: #0b0706;
+  --greenprimary: #70c174;
+  --greentertiary: #eff7f2;
+  --smallsize:1.6em:
+  --colora:#1D2130;
+}
+
+body {
+  font-size: 62.5%;
+  
+}
+
+.heroside{
+    margin: auto;
+   position: absolute;
+    max-width: 1500px;
+    width: 100%;
+  background-color: var(--greentertiary);
+
+    
+}
+nav {
+   
+    position: fixed;
+    z-index: 2;
+  width: 100%;
+  max-width: 1500px;
+  background-color: var(--greentertiary);
+}
+nav img{
+    padding-left: 2em;
+   height: clamp(2em , 3em , 4em);
+   margin-top: 2em;
+}
+nav ul #activeone{
+    color: var(--firsttext);
+}
+nav ul li a {
+  font-size: 1.6em;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--secondtext);
+  transition: 1s;
+}
+nav ul li a:hover{
+    color: red;
+}
+header nav ul {
+  display: flex;
+  width: 100%;
+  max-width: 65em;
+  list-style-type: none;
+  align-items: center;
+  gap:3em;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav button {
+    cursor: pointer;
+  line-height: 1.8em;
+  font-size: 1.6em;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 11.2em;
+  background-color: var(--firsttext);
+  color: white;
+  transition: 2s;
+}
+
+header nav button:hover{
+    background-color: #525560;
+}
+header nav button:active{
+    background-color: greenyellow;
+}
+.fully{
+    
+    height: max-content;
+    position: relative;
+    
+
+}
+.wrapping{
+    background-color: var(--greentertiary);
+
+    height: max-content;
+
+}
+#heroleft {
+    position: relative;
+  width: 100%;
+  float: left;
+  max-width: 50em;
+  margin-top: 20em;
+  margin-inline: 2em;
+
+}
+#heroleft a{
+    font-weight: 700;
+    font-size: clamp(1em, 1.6em , 2em);
+    letter-spacing: clamp(0.1em , 0.2em , 0.3em);
+    text-decoration: none;
+    color: var(--firsttext);
+}
+#heroleft h1{
+    font-weight: 700;
+    font-size: clamp(4.6em, 5.6em , 6.6em);
+    color: var(--headingcolor);
+}
+#heroleft p{
+    font-size: clamp(1em , 1.6em , 2em);
+    line-height: 2.5em;
+
+}
+#heroleft button{
+    width: clamp(10em , 14.2em , 16em);
+    height:clamp(3.1em , 4.1em , 5.1em);
+    background-color: var(--greenprimary);
+    border-radius: 0.4em;
+    margin-top: clamp(2em , 3em , 4em);
+    border: none;
+    color: white;
+    font-size: 1.6em;
+    cursor: pointer;
+
+}
+#heroleft button:hover{
+    background-color: #525560;
+    color: #70c174;
+}
+.righthero{
+   position: relative;
+    float: right;
+    background-color: white;
+    margin: 15em 3em;
+    border-radius: clamp(0.8em , 1.2em , 1.5em);
+display: grid;
+padding: 1em 2em;
+margin-bottom: 20em;
+}
+.righthero img{
+    width: 100%;
+    max-width: 19.2em;
+
+}
+.righthero h3{
+    margin-top: 1em;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 2em;
+}
+.righthero p{
+    line-height: 2em;
+    font-size: 1.6em;
+}
+.leftsection{
+    margin: 1em;
+}
+.leftsection img{
+    margin: 1em;
+float: left;
+width: 100%;
+max-width: 19.2em;
+}
+.centre{
+    margin: auto;
+    position: absolute;
+    z-index: 9;
+    margin-top: 20em;
+
+
+}
+.centre article h2{
+    font-size: 2em;
+    z-index: 9;
+    color: #525560;
+}
+
+@media screen and (width<850px) {
+    header nav ul {
+    margin-left: -10em;
+    flex-wrap: wrap;
+        display: flex;
+        width:700px;
+        margin-top: 9em
+        
+        
+        
+    }
+    .righthero .leftsection img{
+        display: block;
+
+        float: none;
+        margin: auto;
+        
+    }
+    .righthero .leftsection {
+        font-size: larger;
+        text-align: center;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    header nav img{
+        width: 10em;
+    }
+    
+}
+
+@media screen and (max-width:1240px){
+    .righthero{
+        width: 100%;
+        max-width: 120em;
+        flex-grow: 2;
+        margin-left: 10%;
+        margin-right: 10%;
+        justify-content: center;
+    }
+}
